@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    border: 1px solid #cccccc;
+    background:#fdfdfd;
+
+    display: block;
+    margin-top: 25px;
+    width: 350px;
+    height: 600px;;
+}
+
+.logo{
+    background-image: url('../img/1.png');
+    display: block;
+    margin-top: -50px;
+    margin-bottom: -20px;
+
+    height: 140px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+
+.logo p{
+    text-align: center;
+    font-size: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.facebook{
+    display: flex;  
+    justify-content: center;
+    align-items:flex-start;
+    margin-top: 20px;
+}
+
+.btn{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius:5px;
+    background-color: rgba(var(--d69,0,149,246),1);
+    border: none;
+    outline: none;
+
+    width: 240px;
+    height: 30px;
+}
+.btn:focus{
+    border: none;
+    outline: none;
+    background-color: #1D9FF6;
+}
+
+.line{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: -5px;
+    text-align: center;
+}
+
+
+.line p{
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 13px;
+    color:#919191;
+}
+
+.main-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.input{
+    display: flex;
+    margin-top: 10px;
+
+    width: 240px;
+    height: 30px;
+
+    background: rgba(var(--b3f,250,250,250),1);
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 2px; 
+}
+.input:focus{
+    border: 0.5px solid rgb(201, 199, 199);
+    outline: none;
+}
+input::placeholder {
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 11px;
+  }
+
+.submit-form {
+    margin-top: 30px;
+}
+.forget{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -7px;
+    margin-right: 15px;
+}
+
+.forget p {
+    color: #004675;
+    font-size: 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 110px;
+}
+
+.bottom p{
+    color:grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform:capitalize;
+
+}

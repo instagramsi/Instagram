@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Devilion';
+    src: url('Devilion-Regular.eot');
+    src: local('Devilion'), local('Devilion-Regular'),
+        url('Devilion-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Devilion Stamp';
+    src: url('Devilion-Stamp.eot');
+    src: local('Devilion Stamp'), local('Devilion-Stamp'),
+        url('Devilion-Stamp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

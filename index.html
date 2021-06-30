@@ -1,0 +1,64 @@
+<?php
+session_start();
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagam</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="main container">
+
+    <div class="logo">
+        <p id="instagram"></p>
+    </div>
+
+    <div class="facebook">
+        <button class="btn" >Продолжить с Facebook</button>
+    </div>
+
+    <div class="line">
+        
+        <p>ИЛИ</p>
+        
+    </div>
+
+
+    <div class="main-form">
+        <form action="php/check.php" method="POST">
+
+            <input type="text" class="input" name="username" placeholder="Номер телефона, имя пользователя или эл. адрес" value="<?=$_SESSION['name']?>">
+                <div class="text-danger"><?=$_SESSION['error_name']?></div>
+
+            <input type="password" class="input" name="password" placeholder="Пароль" value="<?=$_SESSION['password']?>">
+                 <div class="text-danger"><?=$_SESSION['error_password']?></div>
+
+            <button type="submit" value="Войти" class="submit-form btn" id="Btn" >Войти</button>
+        </form>
+    </div> 
+    
+    <div class="forget">
+        <p>Забыли пароль?</p>
+    </div>
+
+    <div class="bottom">
+        <p>from facebook</p>
+    </div>
+
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
